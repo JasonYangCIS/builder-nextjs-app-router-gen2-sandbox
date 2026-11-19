@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@builder.io/dev-tools": "^1.99.3",
-    "@builder.io/sdk-react": "^5.4.4",
+    "@builder.io/sdk-react": "file:/Users/jyang/Desktop/development/builder/packages/sdks/output/react",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"

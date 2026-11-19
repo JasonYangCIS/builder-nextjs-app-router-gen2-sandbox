@@ -31,7 +31,18 @@ async function BuilderPage({
 
   if (!content && !isPreviewing(query)) notFound();
 
-  return <BuilderContent content={content} model="page" />;
+  return <BuilderContent content={content} model="page" data={{
+    "faq": [
+      {
+        "question": "hello",
+        "answer": "world"
+      },
+      {
+        "question": "hello",
+        "answer": "world!"
+      }
+    ]
+  }} />;
 }
 
 export default function Page(props: {

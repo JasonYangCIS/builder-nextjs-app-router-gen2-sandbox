@@ -8,15 +8,21 @@ export const BUILDER_API_KEY = process.env.NEXT_PUBLIC_BUILDER_KEY!;
 export default function BuilderContent({
   content,
   model = "page",
+  data,
+  context,
 }: {
   content: BuilderContentType | null;
   model?: string;
+  data?: Record<string, any>;
+  context?: Record<string, any>;
 }) {
   return (
     <Content
       content={content}
       model={model}
       apiKey={BUILDER_API_KEY}
+      data={data}
+      context={context}
       customComponents={customComponents}
     />
   );
